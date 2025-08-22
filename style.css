@@ -48,7 +48,6 @@
       background-color: var(--background);
       background-attachment: fixed;
       font: 1.5rem HelvetiPixel;
-      font-kerning: none;
       color: var(--color);
     }
 
@@ -70,6 +69,7 @@
     #sidebar-content header {
       color: var(--title);
       font: 1.8em var(--headerfont);
+      font-kerning: none;
       margin: 8px;
     }
 
@@ -93,6 +93,7 @@
     /* Styling for the menu */
     #main-menu {
       font: 1.1em var(--headerfont);
+      font-kerning: none;
       width: 100%;
     }
 
@@ -130,21 +131,25 @@
 
     main h1 {
       font: 1.8em var(--headerfont);
+      font-kerning: none;
       color: var(--h1);
     }
 
     main h2 {
       font: 1.5em var(--headerfont);
+      font-kerning: none;
       color: var(--h2);
     }
 
     main h3 {
       font: 1.3em var(--headerfont);
+      font-kerning: none;
       color: var(--h3);
     }
 
     main h4 {
       font: 1em var(--headerfont);
+      font-kerning: none;
       font-style: italic;
       color: var(--h4);
     }
