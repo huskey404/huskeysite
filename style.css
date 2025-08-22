@@ -70,7 +70,6 @@
       color: var(--title);
       font: 1.8em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       margin: 8px;
     }
 
@@ -95,7 +94,6 @@
     #main-menu {
       font: 1.1em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       width: 100%;
     }
 
@@ -134,28 +132,24 @@
     main h1 {
       font: 1.8em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       color: var(--h1);
     }
 
     main h2 {
       font: 1.5em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       color: var(--h2);
     }
 
     main h3 {
       font: 1.3em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       color: var(--h3);
     }
 
     main h4 {
       font: 1em var(--headerfont);
       letter-spacing: 2px;
-      font-kerning: none;
       font-style: italic;
       color: var(--h4);
     }
