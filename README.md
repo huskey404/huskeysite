@@ -1,1 +1,1 @@
-huskey.ftp.sh
+getting the domain to work
