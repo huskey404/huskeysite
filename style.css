@@ -6,13 +6,18 @@
   font-family: HelvetiPixel;
   src: url(fonts/HelvetiPixel.ttf);
 }
+@font-face {
+  font-family: Soopafresh;
+  src: url(fonts/Soopafresh.ttf);
+}
     
 /* The following CSS applies on all screen sizes */
     /* Colors and fonts */
     :root {
       /* Fonts */
       --bodyfont: HelvetiPixel;
-      --headerfont: LowerResolution;
+      --headerfont: Soopafresh;
+      --headerspacing: 0px;
       /* Main colors */
       --background: #5a0000;
       /* Page background */
@@ -69,7 +74,7 @@
     #sidebar-content header {
       color: var(--title);
       font: 1.8em var(--headerfont);
-      letter-spacing: 2px;
+      letter-spacing: var(--headerspacing);
       margin: 8px;
     }
 
@@ -131,25 +136,25 @@
 
     main h1 {
       font: 1.8em var(--headerfont);
-      letter-spacing: 2px;
+      letter-spacing: var(--headerspacing);
       color: var(--h1);
     }
 
     main h2 {
       font: 1.5em var(--headerfont);
-      letter-spacing: 2px;
+      letter-spacing: var(--headerspacing);
       color: var(--h2);
     }
 
     main h3 {
       font: 1.3em var(--headerfont);
-      letter-spacing: 2px;
+      letter-spacing: var(--headerspacing);
       color: var(--h3);
     }
 
     main h4 {
       font: 1em var(--headerfont);
-      letter-spacing: 2px;
+      letter-spacing: var(--headerspacing);
       font-style: italic;
       color: var(--h4);
     }
