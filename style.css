@@ -47,7 +47,7 @@
     body {
       background-color: var(--background);
       background-attachment: fixed;
-      font: 2.5rem HelvetiPixel;
+      font: 1.75rem HelvetiPixel;
       color: var(--color);
     }
 
