@@ -32,10 +32,10 @@
       --sidebarlink: #5a0909;
       --sidebarlinkhover: #a94949;
       /* Menu colors */
-      --menubg: #2c1a30;
-      --menucolor: #e2aeae;
-      --menubghover: #e2aeae;
-      --menucolorhover: #2c1a30;
+      --menubg: #301a1a;
+      --menucolor: #f9f8f9;
+      --menubghover: #d9d8d9;
+      --menucolorhover: #301a1a;
     }
 
     * {
