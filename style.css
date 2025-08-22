@@ -1,9 +1,18 @@
-    /* The following CSS applies on all screen sizes */
+@font-face {
+  font-family: LowerResolution;
+  src: url(fonts/LowerResolution.ttf);
+}
+@font-face {
+  font-family: HelvetiPixel;
+  src: url(fonts/HelvetiPixel.ttf);
+}
+    
+/* The following CSS applies on all screen sizes */
     /* Colors and fonts */
     :root {
       /* Fonts */
-      --bodyfont: sans-serif;
-      --headerfont: Georgia, serif;
+      --bodyfont: HelvetiPixel;
+      --headerfont: LowerResolution;
       /* Main colors */
       --background: #5a0000;
       /* Page background */
@@ -46,7 +55,7 @@
     main section,
     #sidebar-content,
     #main-footer {
-      border-radius: 20px;
+      border-radius: 15x;
     }
 
     /* Sidebar styling */
