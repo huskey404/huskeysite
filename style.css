@@ -333,7 +333,7 @@ button {
   flex-direction: column;
   overflow: visible;
   transition: border-color 0.3s ease;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .circle-container {
