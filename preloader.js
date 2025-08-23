@@ -798,3 +798,4 @@ window.addEventListener("load", function () {
   }
 });
 
+// GOD FUCKING DAMMIT I HATE JAVASCRIPT
