@@ -16,8 +16,8 @@
     :root {
       /* Fonts */
       --bodyfont: HelvetiPixel;
-      --headerfont: Soopafresh;
-      --headerspacing: 0px;
+      --headerfont: LowerResolution;
+      --headerspacing: 2px;
       /* Main colors */
       --background: #5a0000;
       /* Page background */
@@ -26,10 +26,10 @@
       /* Background color for the grid blocks in the content */
       --link: #5a0909;
       --linkhover: #a94949;
-      --h1: #2f152f;
-      --h2: #2f152f;
-      --h3: #2f152f;
-      --h4: #2f152f;
+      --h1: #2f1515;
+      --h2: #2f1515;
+      --h3: #2f1515;
+      --h4: #2f1515;
       /* Sidebar colors */
       --sidebar: #f9f8f9;
       --sidebarcolor: #2f152f;
@@ -73,8 +73,7 @@
 
     #sidebar-content header {
       color: var(--title);
-      font: 1.8em var(--headerfont);
-      letter-spacing: var(--headerspacing);
+      font: 1.8em Soopafresh;
       margin: 8px;
     }
 
@@ -85,7 +84,7 @@
 
     #sidebar-content p a:hover {
       color: var(--sidebarlinkhover);
-      transition: 0.5s ease;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .icon img {
@@ -97,7 +96,7 @@
 
     /* Styling for the menu */
     #main-menu {
-      font: 1.1em var(--headerfont);
+      font: 0.65em var(--headerfont);
       letter-spacing: 2px;
       width: 100%;
     }
@@ -105,20 +104,26 @@
     #main-menu ul {
       list-style: none;
     }
-
+    #main-menu li {
+      padding:2px;
+    }
     #main-menu li a {
-      padding: 7px;
+      border-radius: 2em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 9px;
+      padding-right: 9px;
       background: var(--menubg);
       color: var(--menucolor);
       text-decoration: none;
-      transition: 0.5s ease;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     #main-menu li a:hover,
     #main-menu li a:focus {
       background: var(--menubghover);
       color: var(--menucolorhover);
-      transition: 0.5s ease;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     /* Content styling */
@@ -135,19 +140,19 @@
     }
 
     main h1 {
-      font: 1.8em var(--headerfont);
+      font: 1.5em var(--headerfont);
       letter-spacing: var(--headerspacing);
       color: var(--h1);
     }
 
     main h2 {
-      font: 1.5em var(--headerfont);
+      font: 1.3em var(--headerfont);
       letter-spacing: var(--headerspacing);
       color: var(--h2);
     }
 
     main h3 {
-      font: 1.3em var(--headerfont);
+      font: 1.1em var(--headerfont);
       letter-spacing: var(--headerspacing);
       color: var(--h3);
     }
@@ -166,13 +171,13 @@
 
     main a {
       color: var(--link);
-      transition: 0.5s ease;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     main a:hover,
     main a:focus {
       color: var(--linkhover);
-      transition: 0.5s ease;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     main ul {
