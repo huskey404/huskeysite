@@ -787,13 +787,11 @@
 
 // Preloader JS
 var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  fade();
-});
-
-//Fade out, optional
 var s = document.getElementById("preloader").style;
 s.opacity = 1;
 function fade() {
   (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 30);
 }
+window.addEventListener("load", function () {
+  fade();
+});
