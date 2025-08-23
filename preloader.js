@@ -794,6 +794,6 @@ window.addEventListener("load", function () {
 //Fade out, optional
 var s = document.getElementById("preloader").style;
 s.opacity = 1;
-(function fade() {
+function fade() {
   (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 30);
-})();
+}
