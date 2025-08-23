@@ -10,310 +10,404 @@
   font-family: Soopafresh;
   src: url(fonts/Soopafresh.ttf);
 }
-    
+
 /* The following CSS applies on all screen sizes */
-    /* Colors and fonts */
-    :root {
-      /* Fonts */
-      --bodyfont: HelvetiPixel;
-      --headerfont: LowerResolution;
-      --headerspacing: 2px;
-      /* Main colors */
-      --background: #5a0000;
-      /* Page background */
-      --color: #2f152f;
-      --block: #f9f8f9;
-      /* Background color for the grid blocks in the content */
-      --link: #5a0909;
-      --linkhover: #a94949;
-      --h1: #2f1515;
-      --h2: #2f1515;
-      --h3: #2f1515;
-      --h4: #2f1515;
-      /* Sidebar colors */
-      --sidebar: #f9f8f9;
-      --sidebarcolor: #2f152f;
-      --title: #5a0909;
-      --sidebarlink: #5a0909;
-      --sidebarlinkhover: #a94949;
-      /* Menu colors */
-      --menubg: #301a1a;
-      --menucolor: #f9f8f9;
-      --menubghover: #d9d8d9;
-      --menucolorhover: #301a1a;
-    }
+/* Colors and fonts */
+:root {
+  /* Fonts */
+  --bodyfont: HelvetiPixel;
+  --headerfont: LowerResolution;
+  --headerspacing: 2px;
+  /* Main colors */
+  --background: #5a0000;
+  /* Page background */
+  --color: #2f152f;
+  --block: #f9f8f9;
+  /* Background color for the grid blocks in the content */
+  --link: #5a0909;
+  --linkhover: #a94949;
+  --h1: #2f1515;
+  --h2: #2f1515;
+  --h3: #2f1515;
+  --h4: #2f1515;
+  /* Sidebar colors */
+  --sidebar: #f9f8f9;
+  --sidebarcolor: #2f152f;
+  --title: #5a0909;
+  --sidebarlink: #5a0909;
+  --sidebarlinkhover: #a94949;
+  /* Menu colors */
+  --menubg: #301a1a;
+  --menucolor: #f9f8f9;
+  --menubghover: #d9d8d9;
+  --menucolorhover: #301a1a;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    /* Main body styling */
-    body {
-      background-color: var(--background);
-      background-attachment: fixed;
-      font: 1.5rem HelvetiPixel;
-      color: var(--color);
-    }
+/* Main body styling */
+body {
+  background-color: var(--background);
+  background-attachment: fixed;
+  font: 1.5rem HelvetiPixel;
+  color: var(--color);
+}
 
-    /* Rounded corners - feel free to get rid of this or change it */
-    main section,
-    #sidebar-content,
-    #main-footer {
-      border-radius: 15px;
-    }
+/* Rounded corners - feel free to get rid of this or change it */
+main section,
+#sidebar-content,
+#main-footer {
+  border-radius: 15px;
+}
 
-    /* Sidebar styling */
-    #sidebar-content {
-      text-align: center;
-      background: var(--sidebar);
-      color: var(--sidebarcolor);
-      padding: 10px;
-    }
+/* Sidebar styling */
+#sidebar-content {
+  text-align: center;
+  background: var(--sidebar);
+  color: var(--sidebarcolor);
+  padding: 10px;
+}
 
-    #sidebar-content header {
-      color: var(--title);
-      font: 1.8em Soopafresh;
-      margin: 8px;
-    }
+#sidebar-content header {
+  color: var(--title);
+  font: 1.8em Soopafresh;
+  margin: 8px;
+}
 
-    #sidebar-content p a {
-      color: var(--sidebarlink);
-      transition: 0.5s ease;
-    }
+#sidebar-content p a {
+  color: var(--sidebarlink);
+  transition: 0.5s ease;
+}
 
-    #sidebar-content p a:hover {
-      color: var(--sidebarlinkhover);
-      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+#sidebar-content p a:hover {
+  color: var(--sidebarlinkhover);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    .icon img {
-      border-radius: 100%;
-      /* This makes the icon a circle - feel free to remove or reduce for a rectangle or square */
-      max-width: 150px;
-      /* This can be changed to make the icon smaller; you might have to mess with the border radius too */
-    }
+.icon img {
+  border-radius: 100%;
+  /* This makes the icon a circle - feel free to remove or reduce for a rectangle or square */
+  max-width: 150px;
+  /* This can be changed to make the icon smaller; you might have to mess with the border radius too */
+}
 
-    /* Styling for the menu */
-    #main-menu {
-      font: 0.65em var(--headerfont);
-      letter-spacing: 2px;
-      width: 100%;
-    }
+/* Styling for the menu */
+#main-menu {
+  font: 0.65em var(--headerfont);
+  letter-spacing: 2px;
+  width: 100%;
+}
 
-    #main-menu ul {
-      list-style: none;
-    }
-    #main-menu li {
-      padding:2px;
-    }
-    #main-menu li a {
-      border-radius: 2em;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 9px;
-      padding-right: 9px;
-      background: var(--menubg);
-      color: var(--menucolor);
-      text-decoration: none;
-      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+#main-menu ul {
+  list-style: none;
+}
+#main-menu li {
+  padding: 2px;
+}
+#main-menu li a {
+  border-radius: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background: var(--menubg);
+  color: var(--menucolor);
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    #main-menu li a:hover,
-    #main-menu li a:focus {
-      background: var(--menubghover);
-      color: var(--menucolorhover);
-      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+#main-menu li a:hover,
+#main-menu li a:focus {
+  background: var(--menubghover);
+  color: var(--menucolorhover);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    /* Content styling */
-    main {
-      margin-top: 10px;
-    }
+/* Content styling */
+main {
+  margin-top: 10px;
+}
 
-    /* Styling for blocks */
-    main section,
-    #main-footer {
-      padding: 15px;
-      background: var(--block);
-      margin-bottom: 10px;
-    }
+/* Styling for blocks */
+main section,
+#main-footer {
+  padding: 15px;
+  background: var(--block);
+  margin-bottom: 10px;
+}
 
-    main h1 {
-      font: 1.5em var(--headerfont);
-      letter-spacing: var(--headerspacing);
-      color: var(--h1);
-    }
+main h1 {
+  font: 1.5em var(--headerfont);
+  letter-spacing: var(--headerspacing);
+  color: var(--h1);
+}
 
-    main h2 {
-      font: 1.3em var(--headerfont);
-      letter-spacing: var(--headerspacing);
-      color: var(--h2);
-    }
+main h2 {
+  font: 1.3em var(--headerfont);
+  letter-spacing: var(--headerspacing);
+  color: var(--h2);
+}
 
-    main h3 {
-      font: 1.1em var(--headerfont);
-      letter-spacing: var(--headerspacing);
-      color: var(--h3);
-    }
+main h3 {
+  font: 1.1em var(--headerfont);
+  letter-spacing: var(--headerspacing);
+  color: var(--h3);
+}
 
-    main h4 {
-      font: 1em var(--headerfont);
-      letter-spacing: var(--headerspacing);
-      font-style: italic;
-      color: var(--h4);
-    }
+main h4 {
+  font: 1em var(--headerfont);
+  letter-spacing: var(--headerspacing);
+  font-style: italic;
+  color: var(--h4);
+}
 
-    p {
-      line-height: 1.5;
-      margin: 10px 0 10px 0;
-    }
+p {
+  line-height: 1.5;
+  margin: 10px 0 10px 0;
+}
 
-    main a {
-      color: var(--link);
-      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+main a {
+  color: var(--link);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    main a:hover,
-    main a:focus {
-      color: var(--linkhover);
-      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+main a:hover,
+main a:focus {
+  color: var(--linkhover);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    main ul {
-      list-style-position: outside;
-      margin-left: 25px;
-    }
+main ul {
+  list-style-position: outside;
+  margin-left: 25px;
+}
 
-    main ul li {
-      line-height: 1.5;
-    }
+main ul li {
+  line-height: 1.5;
+}
 
-    main img {
-      max-width: 100%;
-    }
+main img {
+  max-width: 100%;
+}
 
-    main input,
-    textarea,
-    select,
-    button {
-      background: var(--block);
-      color: var(--color);
-      font: 1rem var(--bodyfont);
-      border: 1px solid;
-      padding: 8px;
-      margin: 2px;
-    }
+main input,
+textarea,
+select,
+button {
+  background: var(--block);
+  color: var(--color);
+  font: 1rem var(--bodyfont);
+  border: 1px solid;
+  padding: 8px;
+  margin: 2px;
+}
 
-    #main-footer {
-      text-align: center;
-    }
+#main-footer {
+  text-align: center;
+}
 
-    /* The following CSS ONLY applies to mobile/small screens */
-    /* Container styling */
-    #container {
-      width: calc(100% - 20px);
-      padding: 10px;
-      margin-top: 10px;
-    }
+/* The following CSS ONLY applies to mobile/small screens */
+/* Container styling */
+#container {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+}
 
-    #sidebar-content {
-      width: calc(100% - 20px);
-    }
+#sidebar-content {
+  width: calc(100% - 20px);
+}
 
-    #main-menu li {
-      margin-bottom: 15px;
-      display: inline-block;
-    }
+#main-menu li {
+  margin-bottom: 15px;
+  display: inline-block;
+}
 
-    /* Skip to content button */
-    #skip a {
-      position: absolute;
-      display: inline-block;
-      left: 0px;
-      top: -1000px;
-      overflow: hidden;
-      transition: top 0.5s ease;
-      background: var(--block);
-      color: var(--link);
-      z-index: 1000;
-      padding: 5px;
-    }
+/* Skip to content button */
+#skip a {
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: -1000px;
+  overflow: hidden;
+  transition: top 0.5s ease;
+  background: var(--block);
+  color: var(--link);
+  z-index: 1000;
+  padding: 5px;
+}
 
-    #skip a:focus {
-      top: 0;
-      transition: top 0.5s ease;
-    }
+#skip a:focus {
+  top: 0;
+  transition: top 0.5s ease;
+}
 
-    /* The following CSS ONLY applies to desktop/big screens */
-    @media screen and (min-width: 800px) {
-      #container {
-        max-width: 950px;
-        width: 90%;
-        margin: 25px auto;
-        display: flex;
-        gap: 20px;
-      }
+/* The following CSS ONLY applies to desktop/big screens */
+@media screen and (min-width: 800px) {
+  #container {
+    max-width: 950px;
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    gap: 20px;
+  }
 
-      #sidebar {
-        flex: 1 1 calc(25% - 20px);
-        margin-top: 10px;
-      }
+  #sidebar {
+    flex: 1 1 calc(25% - 20px);
+    margin-top: 10px;
+  }
 
-      /* Remove or comment out this block if you don't want a sticky sidebar */
-      #sidebar-content {
-        position: sticky;
-        top: 10px;
-      }
+  /* Remove or comment out this block if you don't want a sticky sidebar */
+  #sidebar-content {
+    position: sticky;
+    top: 10px;
+  }
 
-      /* Make menu links into a column */
-      #main-menu li {
-        display: block;
-        margin: 0;
-      }
+  /* Make menu links into a column */
+  #main-menu li {
+    display: block;
+    margin: 0;
+  }
 
-      #main-menu li a {
-        display: block;
-        border-bottom: 1px solid;
-      }
+  #main-menu li a {
+    display: block;
+    border-bottom: 1px solid;
+  }
 
-      main {
-        flex: 1 1 calc(75% - 30px);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
+  main {
+    flex: 1 1 calc(75% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-      main section {
-        margin: 0;
-      }
+  main section {
+    margin: 0;
+  }
 
-      #main-footer {
-        flex: 1 1 calc(100% - 40px);
-      }
+  #main-footer {
+    flex: 1 1 calc(100% - 40px);
+  }
 
-      /* Defining grid blocks */
-      .full {
-        flex: 1 1 calc(100% - 40px);
-      }
+  /* Defining grid blocks */
+  .full {
+    flex: 1 1 calc(100% - 40px);
+  }
 
-      .half {
-        flex: 1 1 calc(50% - 40px);
-      }
+  .half {
+    flex: 1 1 calc(50% - 40px);
+  }
 
-      .third {
-        flex: 1 1 calc(33% - 40px);
-      }
+  .third {
+    flex: 1 1 calc(33% - 40px);
+  }
 
-      .twothird {
-        flex: 1 1 calc(66% - 40px);
-      }
+  .twothird {
+    flex: 1 1 calc(66% - 40px);
+  }
 
-      .quarter {
-        flex: 1 1 calc(25% - 40px);
-      }
+  .quarter {
+    flex: 1 1 calc(25% - 40px);
+  }
 
-      .threequarter {
-        flex: 1 1 calc(75% - 40px);
-      }
-    }
+  .threequarter {
+    flex: 1 1 calc(75% - 40px);
+  }
+}
+
+/* loader */
+.animation-container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #5a0000;
+  padding: 10px;
+  flex-direction: column;
+  overflow: visible;
+  transition: border-color 0.3s ease;
+}
+
+.circle-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: 0% 50%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Animation keyframes */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
